@@ -1,0 +1,10 @@
+{
+  "api": "1.0.0",
+  "editorType": [
+    "figma"
+  ],
+  "id": "deel-find-me",
+  "name": "Find Me",
+  "main": "build/main.js",
+  "ui": "build/ui.js"
+}
