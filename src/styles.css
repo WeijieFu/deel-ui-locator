@@ -1,7 +1,7 @@
 .boxesWrapper{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 134px);
+
     grid-gap: 0.5rem;    
 }
 
@@ -14,11 +14,29 @@
     background-color: #fff;
     position: relative;
 }
+
+.boilerplate{
+    border: #ddd 1px solid;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 100%;
+    height: 196px;
+    background-color: #fff;
+    position: relative;
+}
+
+.boilerplate:hover .title,
 .box:hover .title{
     opacity: 0;
 }
+
+.boilerplate:hover .iconButtons,
 .box:hover .iconButtons{
     display: flex;
+}
+
+.boilerplate:hover .description{
+    display: block;
 }
 .title{
     font-size: 0.8rem;
@@ -26,12 +44,29 @@
     color: #000;
     width: 100%;
 }
+
+.description{
+    display: none;
+    height: 148px;
+    position: absolute;
+    color: #999;
+    bottom: 0.25rem;
+    background-color: #fff;
+}
+
 .thumbnailWrapper{
     height: 88px;
     overflow: hidden;
 
     display: flex;
     align-items: center;
+}
+
+
+.boilerplate .thumbnailWrapper{
+    height: 154px;
+
+
 }
 .thumbnail{
     width: 100%;
@@ -47,8 +82,8 @@
     left: 0.5rem;
 }
 .iconButton {
-    width: 2rem;
-    height: 2rem;
+    width: 1.6rem;
+    height: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,5 +94,22 @@
     background-color: #E9E9E9;
 }
 .iconButton img{
-    width: 1.5rem;
+    width: 1rem;
+}
+.link{
+    text-decoration: none;
+}
+.article{
+    font-size: 0.75rem;
+    cursor: pointer;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #333;
+    border-radius: 0.125rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.article:hover{
+    background-color: #555;;
 }

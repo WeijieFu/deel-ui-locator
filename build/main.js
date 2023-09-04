@@ -36,6 +36,62 @@ var __copyProps = (to, from, except, desc) => {
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
+// node_modules/@create-figma-plugin/utilities/lib/events.js
+function on(name, handler) {
+  const id = `${currentId}`;
+  currentId += 1;
+  eventHandlers[id] = { handler, name };
+  return function() {
+    delete eventHandlers[id];
+  };
+}
+function invokeEventHandler(name, args) {
+  let invoked = false;
+  for (const id in eventHandlers) {
+    if (eventHandlers[id].name === name) {
+      eventHandlers[id].handler.apply(null, args);
+      invoked = true;
+    }
+  }
+  if (invoked === false) {
+    throw new Error(`No event handler with name \`${name}\``);
+  }
+}
+var eventHandlers, currentId;
+var init_events = __esm({
+  "node_modules/@create-figma-plugin/utilities/lib/events.js"() {
+    eventHandlers = {};
+    currentId = 0;
+    if (typeof window === "undefined") {
+      figma.ui.onmessage = function(args) {
+        if (!Array.isArray(args)) {
+          return;
+        }
+        const [name, ...rest] = args;
+        if (typeof name !== "string") {
+          return;
+        }
+        invokeEventHandler(name, rest);
+      };
+    } else {
+      window.onmessage = function(event) {
+        if (typeof event.data.pluginMessage === "undefined") {
+          return;
+        }
+        const args = event.data.pluginMessage;
+        if (!Array.isArray(args)) {
+          return;
+        }
+        const [name, ...rest] = event.data.pluginMessage;
+        if (typeof name !== "string") {
+          return;
+        }
+        invokeEventHandler(name, rest);
+      };
+    }
+  }
+});
+
 // node_modules/@create-figma-plugin/utilities/lib/ui.js
 function showUI(options, data) {
   if (typeof __html__ === "undefined") {
@@ -54,6 +110,7 @@ var init_ui = __esm({
 // node_modules/@create-figma-plugin/utilities/lib/index.js
 var init_lib = __esm({
   "node_modules/@create-figma-plugin/utilities/lib/index.js"() {
+    init_events();
     init_ui();
   }
 });
@@ -64,6 +121,13 @@ __export(main_exports, {
   default: () => main_default
 });
 function main_default() {
+  on("ADDBOILERPLATE", (componentKey) => {
+    console.log(componentKey);
+    figma.importComponentByKeyAsync(componentKey).then((comp) => {
+      const instance = comp.createInstance();
+      figma.viewport.scrollAndZoomIntoView([instance]);
+    });
+  });
   showUI({
     height: 600,
     width: 480
