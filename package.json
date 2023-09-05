@@ -18,8 +18,8 @@
     "editorType": [
       "figma"
     ],
-    "id": "deel-find-me",
-    "name": "Find Me",
+    "id": "deel-ui-locator",
+    "name": "Deel UI Locator",
     "main": "src/main.jsx",
     "ui": "src/ui.jsx"
   }

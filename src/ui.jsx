@@ -4,11 +4,13 @@ import { h } from "preact"
 
 import { _Section } from "./components/_Section"
 import { _BoilerPlate } from "./components/_BoilerPlate"
+import { _About } from "./components/_About"
 import { COMPONENTS } from "./data/COMPONENTS"
 import { BOILERPLATES } from "./data/BOILERPLATES"
 import { RESOURCES } from "./data/RESOURCES"
+
 function Plugin() {
-  const [currentTab, setCurrentTab] = useState("USEFUL RESOURCES")
+  const [currentTab, setCurrentTab] = useState("COMPONENTS")
   const tabOptions = [
     {
       children: (
@@ -54,6 +56,10 @@ function Plugin() {
         </div>
       ),
       value: "USEFUL RESOURCES",
+    },
+    {
+      children: <_About />,
+      value: "ABOUT",
     },
   ]
   const handleTabClick = (value) => {
