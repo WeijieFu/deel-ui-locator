@@ -42,16 +42,18 @@
     font-size: 0.8rem;
     font-weight: 500;
     color: #000;
-    width: 100%;
+   
 }
 
 .description{
     display: none;
+    width: 100%;
     height: 148px;
     position: absolute;
     color: #999;
     bottom: 0.25rem;
     background-color: #fff;
+    width: calc(100% - 1rem);
 }
 
 .thumbnailWrapper{
