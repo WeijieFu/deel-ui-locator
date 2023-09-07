@@ -1,4 +1,4 @@
-# FindMe
+# Deel UI Locator
  This is a private plugin for figma.
 
 ### How to Install
