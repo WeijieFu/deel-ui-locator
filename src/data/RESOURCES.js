@@ -2,8 +2,16 @@ const ONBOARDING = {
   name: "Onboarding",
   children: [
     {
-      name: "Ger started with design system",
+      name: "Get started with design system",
       link: "https://wiki.deel.network/en/internal/departments/product/Platform/Deel-UI/01-Onboarding/get-started-with-design-system",
+    },
+    {
+      name: "Some of the basics",
+      link: "https://wiki.deel.network/en/internal/departments/product/Platform/Deel-UI/01-Onboarding/some-of-the-basics",
+    },
+    {
+      name: "Deel UI principles",
+      link: "https://wiki.deel.network/en/internal/departments/product/Platform/Deel-UI/01-Onboarding/deel-ui-principles",
     },
   ],
 }
@@ -13,11 +21,15 @@ const USINGDEELUI = {
   children: [
     {
       name: "Conventions",
-      link: "https://wiki.deel.network/en/internal/departments/product/Platform/Deel-UI/02-Using-Deel-UI/ds-hygiene",
+      link: "https://wiki.deel.network/en/internal/departments/product/Platform/Deel-UI/02-Using-Deel-UI/conventions",
     },
     {
       name: "Tokens guide for designers",
-      link: "https://wiki.deel.network/en/internal/departments/product/Platform/Deel-UI/02-Using-Deel-UI/Tokens-Guide-for-Designers",
+      link: "https://wiki.deel.network/en/internal/departments/product/Platform/Deel-UI/02-Using-Deel-UI/tokens-guide-for-designers",
+    },
+    {
+      name: "Adding icons to the system",
+      link: "https://wiki.deel.network/en/internal/departments/product/Platform/Deel-UI/02-Using-Deel-UI/adding-icons-to-the-system",
     },
   ],
 }
@@ -28,10 +40,6 @@ const CONTRIBUTINGTODEELUI = {
     {
       name: "How to contribute to Deel UI",
       link: "https://wiki.deel.network/en/internal/departments/product/Platform/Deel-UI/03-Contributing-to-Deel-UI/how-to-contribute-to-design-system",
-    },
-    {
-      name: "Adding icons to the system",
-      link: "https://wiki.deel.network/en/internal/departments/product/Platform/Deel-UI/03-Contributing-to-Deel-UI/adding-icons-to-the-system",
     },
     {
       name: "Deprecation process for Figma components",

@@ -10,7 +10,7 @@ export const _Article = ({ comp }) => {
       target='_blank'
       class={styles.link}
     >
-      <div class={styles.article}>{comp.name}</div>
+      <div class={`${styles.article}`}>{comp.name}</div>
     </a>
   )
 }

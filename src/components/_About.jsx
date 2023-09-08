@@ -1,6 +1,12 @@
 import { h } from "preact"
-import { Container, Stack, VerticalSpace, Text } from "@create-figma-plugin/ui"
-
+import {
+  Container,
+  Stack,
+  VerticalSpace,
+  Text,
+  Button,
+} from "@create-figma-plugin/ui"
+import styles from "../styles.css"
 export const _About = () => {
   return (
     <Container space='medium'>
@@ -17,6 +23,13 @@ export const _About = () => {
         <VerticalSpace space='large' />
         <Text>Developed by: Weijie Fu</Text>
         <Text>Last update: Sep 4, 2023</Text>
+        <a
+          href={"https://github.com/WeijieFu/deel-ui-locator"}
+          target='_blank'
+          class={styles.link}
+        >
+          <div class={styles.article}>Download the latest version</div>
+        </a>
       </Stack>
     </Container>
   )

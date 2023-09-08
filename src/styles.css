@@ -113,12 +113,14 @@
     cursor: pointer;
     width: 100%;
     padding: 0.5rem;
-    background-color: #333;
+    color: var(--figma-color-text);
     border-radius: 0.125rem;
-    color: #fff;
+    background-color: var(--figma-color-bg-secondary);
     text-decoration: none;
 }
 
+
 .article:hover{
-    background-color: #555;;
+    background-color: var(--figma-color-border-disabled);
 }
+

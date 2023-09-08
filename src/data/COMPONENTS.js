@@ -24,6 +24,31 @@ import NumberFieldImage from "../images/components/NumberField.png"
 import IBANFieldImage from "../images/components/IBANField.png"
 import CurrencyFieldImage from "../images/components/CurrencyField.png"
 import PhoneNumberFieldImage from "../images/components/PhoneNumberField.png"
+import TextAreaImage from "../images/components/TextArea.png"
+import TimePickerImage from "../images/components/TimePicker.png"
+import ToggleButtonImage from "../images/components/ToggleButton.png"
+import SocialMediaImage from "../images/components/SocialMedia.png"
+import ChartImage from "../images/components/Chart.png"
+import ChipImage from "../images/components/Chip.png"
+import DocumentViewerImage from "../images/components/DocumentViewer.png"
+import PriceImage from "../images/components/Price.png"
+import TooltipImage from "../images/components/Tooltip.png"
+import SectionCellImage from "../images/components/SectionCell.png"
+import NavStepperImage from "../images/components/NavStepper.png"
+import VerticalStepperImage from "../images/components/VerticalStepper.png"
+import HorizontalStepperImage from "../images/components/HorizontalStepper.png"
+import TabsImage from "../images/components/Tabs.png"
+import FilterImage from "../images/components/Filter.png"
+import AlertImage from "../images/components/Alert.png"
+import FeedbackPopupImage from "../images/components/FeedbackPopup.png"
+import SnackbarImage from "../images/components/Snackbar.png"
+import WalkthroughGuideImage from "../images/components/WalkthroughGuide.png"
+import ModalImage from "../images/components/Modal.png"
+import EducationalModalImage from "../images/components/EducationalModal.png"
+import WhatsnewModalImage from "../images/components/WhatsnewModal.png"
+import BoxHeaderImage from "../images/components/BoxHeader.png"
+import PageHeaderImage from "../images/components/PageHeader.png"
+import SectionHeaderImage from "../images/components/SectionHeader.png"
 
 const INPUT = {
   name: "Input",
@@ -228,6 +253,56 @@ const INPUT = {
         "https://www.figma.com/file/O4MvZHdnrMOA7QyHdTQyZe/Docs%3A-02-INPUTS?type=design&node-id=36218-386305&mode=design&t=Q83fb4K7CvIHlDWh-4",
       imageSrc: PhoneNumberFieldImage,
     },
+    {
+      name: "Text Area",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=53794-638797&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-inputs-textarea--examples",
+      documentationLink:
+        "https://www.figma.com/file/O4MvZHdnrMOA7QyHdTQyZe/Docs%3A-02-INPUTS?type=design&node-id=36222-389627&mode=design&t=bxbJnXLG3duYmeuu-4",
+      imageSrc: TextAreaImage,
+    },
+    {
+      name: "Text Area",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=53794-638797&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-inputs-textarea--examples",
+      documentationLink:
+        "https://www.figma.com/file/O4MvZHdnrMOA7QyHdTQyZe/Docs%3A-02-INPUTS?type=design&node-id=36222-389627&mode=design&t=bxbJnXLG3duYmeuu-4",
+      imageSrc: TextAreaImage,
+    },
+    {
+      name: "Time Picker",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=52548-613589&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-inputs-timepicker--formik",
+      documentationLink:
+        "https://www.figma.com/file/O4MvZHdnrMOA7QyHdTQyZe/Docs%3A-02-INPUTS?type=design&node-id=36627-22512&mode=design&t=bxbJnXLG3duYmeuu-4",
+      imageSrc: TimePickerImage,
+    },
+    {
+      name: "Toggle Button",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=52552-614553&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-navigation-togglebutton--formik",
+      documentationLink:
+        "https://www.figma.com/file/O4MvZHdnrMOA7QyHdTQyZe/Docs%3A-02-INPUTS?type=design&node-id=26000-646650&mode=design&t=bxbJnXLG3duYmeuu-4",
+      imageSrc: ToggleButtonImage,
+    },
+    {
+      name: "Social Media",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=52552-614803&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/docs/components-inputs-social-media--docs",
+      documentationLink:
+        "https://www.figma.com/file/O4MvZHdnrMOA7QyHdTQyZe/Docs%3A-02-INPUTS?type=design&node-id=36228-388908&mode=design&t=bxbJnXLG3duYmeuu-4",
+      imageSrc: SocialMediaImage,
+    },
   ],
 }
 const DATADISPLAY = {
@@ -263,6 +338,56 @@ const DATADISPLAY = {
         "https://www.figma.com/file/xTwMXoyv5dNVg1TMSoJoRF/Docs%3A-03-DATA-DISPLAY?type=design&node-id=36400-447853&mode=design&t=0IuTBFWL0eUXfgAp-4",
       imageSrc: CellImage,
     },
+
+    {
+      name: "Chart",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=65993-417042&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink: "",
+      documentationLink:
+        "https://www.figma.com/file/xTwMXoyv5dNVg1TMSoJoRF/Docs%3A-03-DATA-DISPLAY?type=design&node-id=36367-440121&mode=design&t=jKwhyknQNdoOyD2K-4",
+      imageSrc: ChartImage,
+    },
+    {
+      name: "Chip",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=58720-580411&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/docs/components-data-display-main-chip--docs",
+      documentationLink:
+        "https://www.figma.com/file/xTwMXoyv5dNVg1TMSoJoRF/Docs%3A-03-DATA-DISPLAY?type=design&node-id=32984-891858&mode=design&t=jKwhyknQNdoOyD2K-4",
+      imageSrc: ChipImage,
+    },
+    {
+      name: "Document Viewer",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=52848-620450&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-data-display-document-viewer--examples",
+      documentationLink:
+        "https://www.figma.com/file/xTwMXoyv5dNVg1TMSoJoRF/Docs%3A-03-DATA-DISPLAY?type=design&node-id=32846-905069&mode=design&t=jKwhyknQNdoOyD2K-4",
+      imageSrc: DocumentViewerImage,
+    },
+    {
+      name: "Price",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=58376-579727&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-data-display-price--examples",
+      documentationLink:
+        "https://www.figma.com/file/xTwMXoyv5dNVg1TMSoJoRF/Docs%3A-03-DATA-DISPLAY?type=design&node-id=36404-447884&mode=design&t=jKwhyknQNdoOyD2K-4",
+      imageSrc: PriceImage,
+    },
+    {
+      name: "Tooltip",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=58409-578386&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-data-display-tooltip--default-story",
+      documentationLink:
+        "https://www.figma.com/file/xTwMXoyv5dNVg1TMSoJoRF/Docs%3A-03-DATA-DISPLAY?type=design&node-id=24911-506290&mode=design&t=jKwhyknQNdoOyD2K-4",
+      imageSrc: TooltipImage,
+    },
   ],
 }
 const NAVIGATION = {
@@ -279,6 +404,16 @@ const NAVIGATION = {
       imageSrc: BreadcrumbImage,
     },
     {
+      name: "Section Cell",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=56301-570367&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/docs/components-navigation-section-cell--docs",
+      documentationLink:
+        "https://www.figma.com/file/FGjfGIDfg7dGfyT68OK4KU/Docs%3A-07-UTILS?type=design&node-id=36083-472279&mode=design&t=CGPPHE2AVL9JhGFo-4",
+      imageSrc: SectionCellImage,
+    },
+    {
       name: "Menu",
       figmaLink:
         "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=50262-624117&mode=design&t=k2LILxZTjmvBE3Cb-4",
@@ -288,7 +423,182 @@ const NAVIGATION = {
         "https://www.figma.com/file/ZX1DtsG5uCRbxCfLRyxhLr/Docs%3A-04-NAVIGATION?type=design&node-id=36172-366313&mode=design&t=vbSbBZOCmXHBghPt-4",
       imageSrc: MenuImage,
     },
+    {
+      name: "Nav Stepper",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=58720-585096&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-navigation-navstepper--example",
+      documentationLink:
+        "https://www.figma.com/file/ZX1DtsG5uCRbxCfLRyxhLr/Docs%3A-04-NAVIGATION?type=design&node-id=26572-653985&mode=design&t=I1XFR2gmmrl2Kjci-4",
+      imageSrc: NavStepperImage,
+    },
+    {
+      name: "Vertical Stepper",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=58720-580642&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-navigation-verticalstepper--default-story",
+      documentationLink:
+        "https://www.figma.com/file/ZX1DtsG5uCRbxCfLRyxhLr/Docs%3A-04-NAVIGATION?type=design&node-id=36468-383398&mode=design&t=I1XFR2gmmrl2Kjci-4",
+      imageSrc: VerticalStepperImage,
+    },
+    {
+      name: "Horizontal Stepper",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=58720-581024&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/docs/components-navigation-horizontalstepper--docs",
+      documentationLink:
+        "https://www.figma.com/file/ZX1DtsG5uCRbxCfLRyxhLr/Docs%3A-04-NAVIGATION?type=design&node-id=36468-464869&mode=design&t=I1XFR2gmmrl2Kjci-4",
+      imageSrc: HorizontalStepperImage,
+    },
+    {
+      name: "Tabs",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=56248-570951&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-navigation-tabs--default",
+      documentationLink:
+        "https://www.figma.com/file/ZX1DtsG5uCRbxCfLRyxhLr/Docs%3A-04-NAVIGATION?type=design&node-id=26466-650910&mode=design&t=I1XFR2gmmrl2Kjci-4",
+      imageSrc: TabsImage,
+    },
+    {
+      name: "Filter",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=55567-645139&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-navigation-filters--examples",
+      documentationLink:
+        "https://www.figma.com/file/ZX1DtsG5uCRbxCfLRyxhLr/Docs%3A-04-NAVIGATION?type=design&node-id=36469-479083&mode=design&t=I1XFR2gmmrl2Kjci-4",
+      imageSrc: FilterImage,
+    },
   ],
 }
 
-export const COMPONENTS = [INPUT, DATADISPLAY, NAVIGATION]
+const FEEDBACK = {
+  name: "Feedback",
+  children: [
+    {
+      name: "Alert",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=56248-570976&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/docs/components-feedback-alert--docs",
+      documentationLink:
+        "https://www.figma.com/file/WOYjqyY0Eep8S61yTHG89V/Docs%3A-05-FEEDBACK?type=design&node-id=25592-615243&mode=design&t=Dv0fkFWJ9RaOOxpC-4",
+      imageSrc: AlertImage,
+    },
+    {
+      name: "Feedback Popup",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=56274-571520&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-feedback-feedback-popup--examples",
+      documentationLink:
+        "https://www.figma.com/file/WOYjqyY0Eep8S61yTHG89V/Docs%3A-05-FEEDBACK?type=design&node-id=36479-81882&mode=design&t=Dv0fkFWJ9RaOOxpC-4",
+      imageSrc: FeedbackPopupImage,
+    },
+    {
+      name: "Snackbar",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=58818-586419&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-feedback-snackbar--snackbars",
+      documentationLink:
+        "https://www.figma.com/file/WOYjqyY0Eep8S61yTHG89V/Docs%3A-05-FEEDBACK?type=design&node-id=25899-659239&mode=design&t=Dv0fkFWJ9RaOOxpC-4",
+      imageSrc: SnackbarImage,
+    },
+    {
+      name: "Walkthrough Guide",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=58818-586138&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-feedback-walkthrough-guide--default",
+      documentationLink:
+        "https://www.figma.com/file/WOYjqyY0Eep8S61yTHG89V/Docs%3A-05-FEEDBACK?type=design&node-id=31616-808737&mode=design&t=Dv0fkFWJ9RaOOxpC-4",
+      imageSrc: WalkthroughGuideImage,
+    },
+  ],
+}
+
+const UTILS = {
+  name: "Utils",
+  children: [
+    {
+      name: "Modal",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=56274-571559&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-data-display-modal--examples",
+      documentationLink:
+        "https://www.figma.com/file/FGjfGIDfg7dGfyT68OK4KU/Docs%3A-07-UTILS?type=design&node-id=32738-893840&mode=design&t=dPC7YSVBfWW7iHQ3-4",
+      imageSrc: ModalImage,
+    },
+    {
+      name: "Educational Modal",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=55226-642612&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-data-display-educational-modal--examples",
+      documentationLink:
+        "https://www.figma.com/file/FGjfGIDfg7dGfyT68OK4KU/Docs%3A-07-UTILS?type=design&node-id=25294-516225&mode=design&t=dPC7YSVBfWW7iHQ3-4",
+      imageSrc: EducationalModalImage,
+    },
+    {
+      name: "What's New Modal",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=56274-571783&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-data-display-whats-new-popup--examples",
+      documentationLink:
+        "https://www.figma.com/file/FGjfGIDfg7dGfyT68OK4KU/Docs%3A-07-UTILS?type=design&node-id=30156-696088&mode=design&t=dPC7YSVBfWW7iHQ3-4",
+      imageSrc: WhatsnewModalImage,
+    },
+  ],
+}
+
+const LAYOUT = {
+  name: "Layout",
+  children: [
+    {
+      name: "Box Header",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=58899-581946&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-layout-sectionheader--section-header-story",
+      documentationLink:
+        "https://www.figma.com/file/SthJkZnbohnORhktcR4f98/Docs%3A-08-LAYOUT?type=design&node-id=36273-8344&mode=design&t=Ra8bNvPUMnJx9Ptu-4",
+      imageSrc: BoxHeaderImage,
+    },
+    {
+      name: "Page Header",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=49716-650968&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-layout-page-header--primary-examples",
+      documentationLink:
+        "https://www.figma.com/file/SthJkZnbohnORhktcR4f98/Docs%3A-08-LAYOUT?type=design&node-id=36065-542568&mode=design&t=Ra8bNvPUMnJx9Ptu-4",
+      imageSrc: PageHeaderImage,
+    },
+    {
+      name: "Section Header",
+      figmaLink:
+        "https://www.figma.com/file/DtsfadHWxtkdJIiGkih7U0/Design-System?type=design&node-id=58899-583308&mode=design&t=gDSJR9b5PuPzz1Nh-4",
+      storybookLink:
+        "https://storybook-master.deel.wtf/?path=/story/components-layout-sectionheader--section-header-story",
+      documentationLink:
+        "https://www.figma.com/file/SthJkZnbohnORhktcR4f98/Docs%3A-08-LAYOUT?type=design&node-id=36392-5695&mode=design&t=Ra8bNvPUMnJx9Ptu-4",
+      imageSrc: SectionHeaderImage,
+    },
+  ],
+}
+
+export const COMPONENTS = [
+  INPUT,
+  DATADISPLAY,
+  NAVIGATION,
+  FEEDBACK,
+  UTILS,
+  LAYOUT,
+]
