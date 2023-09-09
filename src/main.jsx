@@ -26,7 +26,6 @@ const init = async () => {
   const BOILERPLATES = formatBoilerplates(_boilerplates)
   const RESOURCES = formatResources(_resources)
 
-  console.log(COMPONENTS, BOILERPLATES, RESOURCES)
   showUI(
     {
       height: 600,

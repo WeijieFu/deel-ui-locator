@@ -9,20 +9,19 @@ import {
 import styles from "../styles.css"
 export const _About = () => {
   return (
-    <Container space='medium'>
-      <VerticalSpace space='medium' />
+    <div className={styles.about}>
       <Stack space='medium'>
-        <Text>
+        <p>
           This plugin creates a central place for the resources related to the
           Deel UI design system.
-        </Text>
-        <Text>
+        </p>
+        <p>
           If you have any feedback or suggestion, please reach out to @Weijie Fu
           on Slack.
-        </Text>
+        </p>
         <VerticalSpace space='large' />
-        <Text>Developed by: Weijie Fu</Text>
-        <Text>Last update: Sep 9, 2023</Text>
+        <p>Developed by: Weijie Fu</p>
+        <p>Last update: Sep 9, 2023</p>
         <a
           href={"https://github.com/WeijieFu/deel-ui-locator"}
           target='_blank'
@@ -31,6 +30,6 @@ export const _About = () => {
           <div class={styles.article}>Download the latest version</div>
         </a>
       </Stack>
-    </Container>
+    </div>
   )
 }

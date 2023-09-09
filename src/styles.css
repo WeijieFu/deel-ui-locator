@@ -126,3 +126,17 @@
     background-color: var(--figma-color-border-disabled);
 }
 
+
+
+.about{
+    padding: 4rem;
+    color: var(--figma-color-text);
+}
+
+.about p{
+    text-align: center;
+}
+
+.about .article {
+    text-align: center;
+}

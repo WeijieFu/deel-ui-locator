@@ -288,7 +288,6 @@ var init_main = __esm({
       const COMPONENTS = formatComponents(_components);
       const BOILERPLATES = formatBoilerplates(_boilerplates);
       const RESOURCES = formatResources(_resources);
-      console.log(COMPONENTS, BOILERPLATES, RESOURCES);
       showUI(
         {
           height: 600,
