@@ -323,7 +323,7 @@ var init_main = __esm({
       const COMPONENTS = formatComponents(_components);
       const BOILERPLATES = formatBoilerplates(_boilerplates);
       const RESOURCES = formatResources(_resources);
-      await insertData(figma.currentUser.name, "opened");
+      await insertData(figma.currentUser.name, "open plugin");
       showUI(
         {
           height: 600,

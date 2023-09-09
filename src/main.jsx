@@ -33,7 +33,7 @@ const init = async () => {
   const BOILERPLATES = formatBoilerplates(_boilerplates)
   const RESOURCES = formatResources(_resources)
 
-  await insertData(figma.currentUser.name, "opened")
+  await insertData(figma.currentUser.name, "open plugin")
 
   showUI(
     {
