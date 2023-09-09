@@ -182,6 +182,36 @@ var init_getData = __esm({
   }
 });
 
+// src/api/postData.js
+var insertData;
+var init_postData = __esm({
+  "src/api/postData.js"() {
+    "use strict";
+    init_endpoint();
+    insertData = async (currentUser, type) => {
+      try {
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            query: `
+                mutation {
+                    createView(data:{name: "${currentUser}", action: "${type}"}) {
+                    id
+                    } 
+                }
+              `
+          })
+        });
+      } catch (err) {
+        console.log(err);
+      }
+    };
+  }
+});
+
 // src/data/formatData.js
 var formatComponents, formatBoilerplates, formatResources;
 var init_formatData = __esm({
@@ -269,11 +299,15 @@ __export(main_exports, {
 });
 function main_default() {
   init();
-  on("ADDBOILERPLATE", (componentKey) => {
+  on("ADDBOILERPLATE", async (componentKey) => {
     figma.importComponentByKeyAsync(componentKey).then((comp) => {
       const instance = comp.createInstance();
       figma.viewport.scrollAndZoomIntoView([instance]);
     });
+    await insertData(figma.currentUser.name, "add boilerplate");
+  });
+  on("GOTO", async (type) => {
+    await insertData(figma.currentUser.name, type);
   });
 }
 var init;
@@ -282,12 +316,14 @@ var init_main = __esm({
     "use strict";
     init_lib();
     init_getData();
+    init_postData();
     init_formatData();
     init = async () => {
       const [_components, _boilerplates, _resources] = await getData();
       const COMPONENTS = formatComponents(_components);
       const BOILERPLATES = formatBoilerplates(_boilerplates);
       const RESOURCES = formatResources(_resources);
+      await insertData(figma.currentUser.name, "opened");
       showUI(
         {
           height: 600,

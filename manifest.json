@@ -6,5 +6,8 @@
   "id": "deel-ui-locator",
   "name": "Deel UI Locator",
   "main": "build/main.js",
-  "ui": "build/ui.js"
+  "ui": "build/ui.js",
+  "permissions": [
+    "currentuser"
+  ]
 }

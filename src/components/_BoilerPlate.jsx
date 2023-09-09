@@ -21,6 +21,7 @@ export const _BoilerPlate = ({ comp }) => {
           <_IconButton
             src={FigmaIcon}
             url={comp.figmaLink}
+            type='go to template'
           />
           <div
             class={styles.iconButton}

@@ -21,6 +21,7 @@
     "id": "deel-ui-locator",
     "name": "Deel UI Locator",
     "main": "src/main.jsx",
-    "ui": "src/ui.jsx"
+    "ui": "src/ui.jsx",
+    "permissions": ["currentuser"]
   }
 }
