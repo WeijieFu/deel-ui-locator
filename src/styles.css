@@ -58,6 +58,7 @@
     bottom: 0.25rem;
     background-color: #fff;
     width: calc(100% - 1rem);
+    z-index: 10;
 }
 
 .thumbnailWrapper{
@@ -68,6 +69,7 @@
     overflow: hidden;
     display: flex;
     align-items: center;
+    z-index: 0;
 }
 
 

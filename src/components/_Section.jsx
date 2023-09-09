@@ -15,7 +15,7 @@ export const _Section = ({ section, currentTab }) => {
   }
   return (
     <Disclosure
-      title={section.name}
+      title={section.name.replaceAll("_", " ")}
       open={open}
       onClick={handleClick}
     >

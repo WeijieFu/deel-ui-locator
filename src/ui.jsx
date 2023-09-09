@@ -5,17 +5,15 @@ import { h } from "preact"
 import { _Section } from "./components/_Section"
 import { _BoilerPlate } from "./components/_BoilerPlate"
 import { _About } from "./components/_About"
-import { COMPONENTS } from "./data/COMPONENTS"
-import { BOILERPLATES } from "./data/BOILERPLATES"
-import { RESOURCES } from "./data/RESOURCES"
 
-function Plugin() {
+function Plugin({ data }) {
+  // console.log(data)
   const [currentTab, setCurrentTab] = useState("COMPONENTS")
   const tabOptions = [
     {
       children: (
         <div>
-          {COMPONENTS.map((section) => {
+          {data.COMPONENTS.map((section) => {
             return (
               <_Section
                 section={section}
@@ -30,7 +28,7 @@ function Plugin() {
     {
       children: (
         <div>
-          {BOILERPLATES.map((section) => {
+          {data.BOILERPLATES.map((section) => {
             return (
               <_Section
                 section={section}
@@ -45,7 +43,7 @@ function Plugin() {
     {
       children: (
         <div>
-          {RESOURCES.map((section) => {
+          {data.RESOURCES.map((section) => {
             return (
               <_Section
                 section={section}

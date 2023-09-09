@@ -22,7 +22,7 @@ export const _About = () => {
         </Text>
         <VerticalSpace space='large' />
         <Text>Developed by: Weijie Fu</Text>
-        <Text>Last update: Sep 4, 2023</Text>
+        <Text>Last update: Sep 9, 2023</Text>
         <a
           href={"https://github.com/WeijieFu/deel-ui-locator"}
           target='_blank'

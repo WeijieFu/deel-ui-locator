@@ -115,28 +115,188 @@ var init_lib = __esm({
   }
 });
 
+// src/api/endpoint.js
+var url;
+var init_endpoint = __esm({
+  "src/api/endpoint.js"() {
+    "use strict";
+    url = "https://api-eu-west-2.hygraph.com/v2/clmc22rvx13mf01uj7se99gho/master";
+  }
+});
+
+// src/api/getData.js
+var getData;
+var init_getData = __esm({
+  "src/api/getData.js"() {
+    "use strict";
+    init_endpoint();
+    getData = async () => {
+      try {
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            query: `
+                query {
+                    components(first:100) {
+                      type
+                      name
+                      figmaLink
+                      storybookLink
+                      documentationLink
+                      thumbnail {
+                        url
+                      }
+                    }
+                    boilerplates(first:100) {
+                      type
+                      name
+                      description
+                      figmaLink
+                      componentKey
+                      thumbnail{
+                        url
+                      }
+                    }
+                    resources(first:100){
+                      type
+                      name
+                      link
+                    }
+                  }
+              `
+          })
+        });
+        const result = await response.json();
+        return [
+          result.data.components,
+          result.data.boilerplates,
+          result.data.resources
+        ];
+      } catch (err) {
+        console.log(err);
+      }
+    };
+  }
+});
+
+// src/data/formatData.js
+var formatComponents, formatBoilerplates, formatResources;
+var init_formatData = __esm({
+  "src/data/formatData.js"() {
+    "use strict";
+    formatComponents = (components) => {
+      const componentTypes = [];
+      components.map((comp, index) => {
+        if (!componentTypes.includes(comp.type)) {
+          componentTypes.push(comp.type);
+        }
+      });
+      const COMPONENTS = componentTypes.map((componentType, index) => {
+        return { name: componentType, children: [] };
+      });
+      COMPONENTS.forEach((comp) => {
+        components.forEach((c) => {
+          if (c.type === comp.name) {
+            comp.children.push({
+              name: c.name,
+              figmaLink: c.figmaLink,
+              storybookLink: c.storybookLink,
+              documentationLink: c.documentationLink,
+              imageSrc: c.thumbnail.url
+            });
+          }
+        });
+      });
+      return COMPONENTS;
+    };
+    formatBoilerplates = (boilerplates) => {
+      const boilerplatesTypes = [];
+      boilerplates.map((bp, index) => {
+        if (!boilerplatesTypes.includes(bp.type)) {
+          boilerplatesTypes.push(bp.type);
+        }
+      });
+      const BOILERPLATES = boilerplatesTypes.map((boilerplateType, index) => {
+        return { name: boilerplateType, children: [] };
+      });
+      BOILERPLATES.forEach((bp) => {
+        boilerplates.forEach((b) => {
+          if (b.type === bp.name) {
+            bp.children.push({
+              name: b.name,
+              figmaLink: b.figmaLink,
+              description: b.description,
+              componentKey: b.componentKey,
+              imageSrc: b.thumbnail.url
+            });
+          }
+        });
+      });
+      return BOILERPLATES;
+    };
+    formatResources = (resources) => {
+      const resourcesTypes = [];
+      resources.map((rs, index) => {
+        if (!resourcesTypes.includes(rs.type)) {
+          resourcesTypes.push(rs.type);
+        }
+      });
+      const RESOURCES = resourcesTypes.map((resorceType, index) => {
+        return { name: resorceType, children: [] };
+      });
+      RESOURCES.forEach((rs) => {
+        resources.forEach((r) => {
+          if (r.type === rs.name) {
+            rs.children.push({
+              name: r.name,
+              link: r.link
+            });
+          }
+        });
+      });
+      return RESOURCES;
+    };
+  }
+});
+
 // src/main.jsx
 var main_exports = {};
 __export(main_exports, {
   default: () => main_default
 });
 function main_default() {
+  init();
   on("ADDBOILERPLATE", (componentKey) => {
-    console.log(componentKey);
     figma.importComponentByKeyAsync(componentKey).then((comp) => {
       const instance = comp.createInstance();
       figma.viewport.scrollAndZoomIntoView([instance]);
     });
   });
-  showUI({
-    height: 600,
-    width: 480
-  });
 }
+var init;
 var init_main = __esm({
   "src/main.jsx"() {
     "use strict";
     init_lib();
+    init_getData();
+    init_formatData();
+    init = async () => {
+      const [_components, _boilerplates, _resources] = await getData();
+      const COMPONENTS = formatComponents(_components);
+      const BOILERPLATES = formatBoilerplates(_boilerplates);
+      const RESOURCES = formatResources(_resources);
+      console.log(COMPONENTS, BOILERPLATES, RESOURCES);
+      showUI(
+        {
+          height: 600,
+          width: 480
+        },
+        { data: { COMPONENTS, BOILERPLATES, RESOURCES } }
+      );
+    };
   }
 });
 
