@@ -21,7 +21,7 @@ export const _About = () => {
         </p>
         <VerticalSpace space='large' />
         <p>Developed by: Weijie Fu</p>
-        <p>Last update: Sep 9, 2023</p>
+        <p>Last update: Sep 16, 2023</p>
         <a
           href={"https://github.com/WeijieFu/deel-ui-locator"}
           target='_blank'
