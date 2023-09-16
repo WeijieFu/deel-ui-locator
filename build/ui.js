@@ -107,9 +107,9 @@
     x.__r = 0;
   }
   function P(n2, l3, u3, t3, i3, o3, r3, f3, e3, a3, v3) {
-    var p2, y2, _, b3, m3, w3, x2, P2, C2, H2 = 0, I2 = t3 && t3.__k || s, T3 = I2.length, j3 = T3, z3 = l3.length;
+    var p2, y2, _2, b3, m3, w3, x2, P2, C2, H2 = 0, I2 = t3 && t3.__k || s, T3 = I2.length, j3 = T3, z3 = l3.length;
     for (u3.__k = [], p2 = 0; p2 < z3; p2++)
-      null != (b3 = u3.__k[p2] = null == (b3 = l3[p2]) || "boolean" == typeof b3 || "function" == typeof b3 ? null : "string" == typeof b3 || "number" == typeof b3 || "bigint" == typeof b3 ? d(null, b3, null, null, b3) : h(b3) ? d(k, { children: b3 }, null, null, null) : b3.__b > 0 ? d(b3.type, b3.props, b3.key, b3.ref ? b3.ref : null, b3.__v) : b3) ? (b3.__ = u3, b3.__b = u3.__b + 1, -1 === (P2 = A(b3, I2, x2 = p2 + H2, j3)) ? _ = c : (_ = I2[P2] || c, I2[P2] = void 0, j3--), L(n2, b3, _, i3, o3, r3, f3, e3, a3, v3), m3 = b3.__e, (y2 = b3.ref) && _.ref != y2 && (_.ref && O(_.ref, null, b3), v3.push(y2, b3.__c || m3, b3)), null != m3 && (null == w3 && (w3 = m3), (C2 = _ === c || null === _.__v) ? -1 == P2 && H2-- : P2 !== x2 && (P2 === x2 + 1 ? H2++ : P2 > x2 ? j3 > z3 - x2 ? H2 += P2 - x2 : H2-- : H2 = P2 < x2 && P2 == x2 - 1 ? P2 - x2 : 0), x2 = p2 + H2, "function" != typeof b3.type || P2 === x2 && _.__k !== b3.__k ? "function" == typeof b3.type || P2 === x2 && !C2 ? void 0 !== b3.__d ? (e3 = b3.__d, b3.__d = void 0) : e3 = m3.nextSibling : e3 = S(n2, m3, e3) : e3 = $(b3, e3, n2), "function" == typeof u3.type && (u3.__d = e3))) : (_ = I2[p2]) && null == _.key && _.__e && (_.__e == e3 && (e3 = g(_)), q(_, _, false), I2[p2] = null);
+      null != (b3 = u3.__k[p2] = null == (b3 = l3[p2]) || "boolean" == typeof b3 || "function" == typeof b3 ? null : "string" == typeof b3 || "number" == typeof b3 || "bigint" == typeof b3 ? d(null, b3, null, null, b3) : h(b3) ? d(k, { children: b3 }, null, null, null) : b3.__b > 0 ? d(b3.type, b3.props, b3.key, b3.ref ? b3.ref : null, b3.__v) : b3) ? (b3.__ = u3, b3.__b = u3.__b + 1, -1 === (P2 = A(b3, I2, x2 = p2 + H2, j3)) ? _2 = c : (_2 = I2[P2] || c, I2[P2] = void 0, j3--), L(n2, b3, _2, i3, o3, r3, f3, e3, a3, v3), m3 = b3.__e, (y2 = b3.ref) && _2.ref != y2 && (_2.ref && O(_2.ref, null, b3), v3.push(y2, b3.__c || m3, b3)), null != m3 && (null == w3 && (w3 = m3), (C2 = _2 === c || null === _2.__v) ? -1 == P2 && H2-- : P2 !== x2 && (P2 === x2 + 1 ? H2++ : P2 > x2 ? j3 > z3 - x2 ? H2 += P2 - x2 : H2-- : H2 = P2 < x2 && P2 == x2 - 1 ? P2 - x2 : 0), x2 = p2 + H2, "function" != typeof b3.type || P2 === x2 && _2.__k !== b3.__k ? "function" == typeof b3.type || P2 === x2 && !C2 ? void 0 !== b3.__d ? (e3 = b3.__d, b3.__d = void 0) : e3 = m3.nextSibling : e3 = S(n2, m3, e3) : e3 = $(b3, e3, n2), "function" == typeof u3.type && (u3.__d = e3))) : (_2 = I2[p2]) && null == _2.key && _2.__e && (_2.__e == e3 && (e3 = g(_2)), q(_2, _2, false), I2[p2] = null);
     for (u3.__e = w3, p2 = T3; p2--; )
       null != I2[p2] && ("function" == typeof u3.type && null != I2[p2].__e && I2[p2].__e == u3.__d && (u3.__d = I2[p2].__e.nextSibling), q(I2[p2], I2[p2]));
   }
@@ -190,14 +190,14 @@
     return this.l[n2.type + true](l.event ? l.event(n2) : n2);
   }
   function L(n2, u3, t3, i3, o3, r3, f3, e3, c3, s3) {
-    var a3, p2, y2, d3, _, g3, m3, w3, x2, $2, C2, S2, A2, H2, I2, T3 = u3.type;
+    var a3, p2, y2, d3, _2, g3, m3, w3, x2, $2, C2, S2, A2, H2, I2, T3 = u3.type;
     if (void 0 !== u3.constructor)
       return null;
     null != t3.__h && (c3 = t3.__h, e3 = u3.__e = t3.__e, u3.__h = null, r3 = [e3]), (a3 = l.__b) && a3(u3);
     n:
       if ("function" == typeof T3)
         try {
-          if (w3 = u3.props, x2 = (a3 = T3.contextType) && i3[a3.__c], $2 = a3 ? x2 ? x2.props.value : a3.__ : i3, t3.__c ? m3 = (p2 = u3.__c = t3.__c).__ = p2.__E : ("prototype" in T3 && T3.prototype.render ? u3.__c = p2 = new T3(w3, $2) : (u3.__c = p2 = new b(w3, $2), p2.constructor = T3, p2.render = B), x2 && x2.sub(p2), p2.props = w3, p2.state || (p2.state = {}), p2.context = $2, p2.__n = i3, y2 = p2.__d = true, p2.__h = [], p2._sb = []), null == p2.__s && (p2.__s = p2.state), null != T3.getDerivedStateFromProps && (p2.__s == p2.state && (p2.__s = v({}, p2.__s)), v(p2.__s, T3.getDerivedStateFromProps(w3, p2.__s))), d3 = p2.props, _ = p2.state, p2.__v = u3, y2)
+          if (w3 = u3.props, x2 = (a3 = T3.contextType) && i3[a3.__c], $2 = a3 ? x2 ? x2.props.value : a3.__ : i3, t3.__c ? m3 = (p2 = u3.__c = t3.__c).__ = p2.__E : ("prototype" in T3 && T3.prototype.render ? u3.__c = p2 = new T3(w3, $2) : (u3.__c = p2 = new b(w3, $2), p2.constructor = T3, p2.render = B), x2 && x2.sub(p2), p2.props = w3, p2.state || (p2.state = {}), p2.context = $2, p2.__n = i3, y2 = p2.__d = true, p2.__h = [], p2._sb = []), null == p2.__s && (p2.__s = p2.state), null != T3.getDerivedStateFromProps && (p2.__s == p2.state && (p2.__s = v({}, p2.__s)), v(p2.__s, T3.getDerivedStateFromProps(w3, p2.__s))), d3 = p2.props, _2 = p2.state, p2.__v = u3, y2)
             null == T3.getDerivedStateFromProps && null != p2.componentWillMount && p2.componentWillMount(), null != p2.componentDidMount && p2.__h.push(p2.componentDidMount);
           else {
             if (null == T3.getDerivedStateFromProps && w3 !== d3 && null != p2.componentWillReceiveProps && p2.componentWillReceiveProps(w3, $2), !p2.__e && (null != p2.shouldComponentUpdate && false === p2.shouldComponentUpdate(w3, p2.__s, $2) || u3.__v === t3.__v)) {
@@ -209,7 +209,7 @@
               break n;
             }
             null != p2.componentWillUpdate && p2.componentWillUpdate(w3, p2.__s, $2), null != p2.componentDidUpdate && p2.__h.push(function() {
-              p2.componentDidUpdate(d3, _, g3);
+              p2.componentDidUpdate(d3, _2, g3);
             });
           }
           if (p2.context = $2, p2.props = w3, p2.__P = n2, p2.__e = false, S2 = l.__r, A2 = 0, "prototype" in T3 && T3.prototype.render) {
@@ -220,7 +220,7 @@
             do {
               p2.__d = false, S2 && S2(u3), a3 = p2.render(p2.props, p2.state, p2.context), p2.state = p2.__s;
             } while (p2.__d && ++A2 < 25);
-          p2.state = p2.__s, null != p2.getChildContext && (i3 = v(v({}, i3), p2.getChildContext())), y2 || null == p2.getSnapshotBeforeUpdate || (g3 = p2.getSnapshotBeforeUpdate(d3, _)), P(n2, h(I2 = null != a3 && a3.type === k && null == a3.key ? a3.props.children : a3) ? I2 : [I2], u3, t3, i3, o3, r3, f3, e3, c3, s3), p2.base = u3.__e, u3.__h = null, p2.__h.length && f3.push(p2), m3 && (p2.__E = p2.__ = null);
+          p2.state = p2.__s, null != p2.getChildContext && (i3 = v(v({}, i3), p2.getChildContext())), y2 || null == p2.getSnapshotBeforeUpdate || (g3 = p2.getSnapshotBeforeUpdate(d3, _2)), P(n2, h(I2 = null != a3 && a3.type === k && null == a3.key ? a3.props.children : a3) ? I2 : [I2], u3, t3, i3, o3, r3, f3, e3, c3, s3), p2.base = u3.__e, u3.__h = null, p2.__h.length && f3.push(p2), m3 && (p2.__E = p2.__ = null);
         } catch (n3) {
           u3.__v = null, (c3 || null != r3) && (u3.__e = e3, u3.__h = !!c3, r3[r3.indexOf(e3)] = null), l.__e(n3, u3, t3);
         }
@@ -242,7 +242,7 @@
     });
   }
   function N(l3, u3, t3, i3, o3, r3, f3, e3, s3) {
-    var a3, v3, y2, d3 = t3.props, _ = u3.props, k3 = u3.type, b3 = 0;
+    var a3, v3, y2, d3 = t3.props, _2 = u3.props, k3 = u3.type, b3 = 0;
     if ("svg" === k3 && (o3 = true), null != r3) {
       for (; b3 < r3.length; b3++)
         if ((a3 = r3[b3]) && "setAttribute" in a3 == !!k3 && (k3 ? a3.localName === k3 : 3 === a3.nodeType)) {
@@ -252,24 +252,24 @@
     }
     if (null == l3) {
       if (null === k3)
-        return document.createTextNode(_);
-      l3 = o3 ? document.createElementNS("http://www.w3.org/2000/svg", k3) : document.createElement(k3, _.is && _), r3 = null, e3 = false;
+        return document.createTextNode(_2);
+      l3 = o3 ? document.createElementNS("http://www.w3.org/2000/svg", k3) : document.createElement(k3, _2.is && _2), r3 = null, e3 = false;
     }
     if (null === k3)
-      d3 === _ || e3 && l3.data === _ || (l3.data = _);
+      d3 === _2 || e3 && l3.data === _2 || (l3.data = _2);
     else {
-      if (r3 = r3 && n.call(l3.childNodes), v3 = (d3 = t3.props || c).dangerouslySetInnerHTML, y2 = _.dangerouslySetInnerHTML, !e3) {
+      if (r3 = r3 && n.call(l3.childNodes), v3 = (d3 = t3.props || c).dangerouslySetInnerHTML, y2 = _2.dangerouslySetInnerHTML, !e3) {
         if (null != r3)
           for (d3 = {}, b3 = 0; b3 < l3.attributes.length; b3++)
             d3[l3.attributes[b3].name] = l3.attributes[b3].value;
         (y2 || v3) && (y2 && (v3 && y2.__html == v3.__html || y2.__html === l3.innerHTML) || (l3.innerHTML = y2 && y2.__html || ""));
       }
-      if (H(l3, _, d3, o3, e3), y2)
+      if (H(l3, _2, d3, o3, e3), y2)
         u3.__k = [];
       else if (P(l3, h(b3 = u3.props.children) ? b3 : [b3], u3, t3, i3, o3 && "foreignObject" !== k3, r3, f3, r3 ? r3[0] : t3.__k && g(t3, 0), e3, s3), null != r3)
         for (b3 = r3.length; b3--; )
           null != r3[b3] && p(r3[b3]);
-      e3 || ("value" in _ && void 0 !== (b3 = _.value) && (b3 !== l3.value || "progress" === k3 && !b3 || "option" === k3 && b3 !== d3.value) && T(l3, "value", b3, d3.value, false), "checked" in _ && void 0 !== (b3 = _.checked) && b3 !== l3.checked && T(l3, "checked", b3, d3.checked, false));
+      e3 || ("value" in _2 && void 0 !== (b3 = _2.value) && (b3 !== l3.value || "progress" === k3 && !b3 || "option" === k3 && b3 !== d3.value) && T(l3, "value", b3, d3.value, false), "checked" in _2 && void 0 !== (b3 = _2.checked) && b3 !== l3.checked && T(l3, "checked", b3, d3.checked, false));
     }
     return l3;
   }
@@ -333,6 +333,17 @@
     }
   });
 
+  // node_modules/@create-figma-plugin/ui/lib/utilities/create-class-name.js
+  function createClassName(classNames) {
+    return classNames.filter(function(className) {
+      return className !== null;
+    }).join(" ");
+  }
+  var init_create_class_name = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/utilities/create-class-name.js"() {
+    }
+  });
+
   // node_modules/preact/hooks/dist/hooks.module.js
   function d2(t3, u3) {
     l.__h && l.__h(r2, t3, o2 || u3), o2 = 0;
@@ -377,6 +388,11 @@
       }, r2.shouldComponentUpdate = f3;
     }
     return o3.__N || o3.__;
+  }
+  function _(n2) {
+    return o2 = 5, F(function() {
+      return { current: n2 };
+    }, []);
   }
   function F(n2, r3) {
     var u3 = d2(t2++, 7);
@@ -471,10 +487,10 @@
     }
   });
 
-  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/a9ff1913-bdce-4fab-9fa6-8753b6f2e165/icon.module.js
+  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/5e510a1e-8bd8-4e42-aea6-4977fbb067c1/icon.module.js
   var icon_module_default;
   var init_icon_module = __esm({
-    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/a9ff1913-bdce-4fab-9fa6-8753b6f2e165/icon.module.js"() {
+    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/5e510a1e-8bd8-4e42-aea6-4977fbb067c1/icon.module.js"() {
       if (document.getElementById("7de6ccef03") === null) {
         const element = document.createElement("style");
         element.id = "7de6ccef03";
@@ -522,10 +538,10 @@
     }
   });
 
-  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/0f9a71f4-0a6b-47f3-9d65-20032b45d329/disclosure.module.js
+  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/868cd67a-e4d1-49c9-b2f1-ad737c3eebaa/disclosure.module.js
   var disclosure_module_default;
   var init_disclosure_module = __esm({
-    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/0f9a71f4-0a6b-47f3-9d65-20032b45d329/disclosure.module.js"() {
+    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/868cd67a-e4d1-49c9-b2f1-ad737c3eebaa/disclosure.module.js"() {
       if (document.getElementById("02cd1665bc") === null) {
         const element = document.createElement("style");
         element.id = "02cd1665bc";
@@ -622,10 +638,31 @@
     }
   });
 
-  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/5a326d6b-532c-444e-a87d-ff2679648f24/stack.module.js
+  // node_modules/@create-figma-plugin/ui/lib/utilities/get-current-from-ref.js
+  function getCurrentFromRef(ref) {
+    if (ref.current === null) {
+      throw new Error("`ref.current` is `undefined`");
+    }
+    return ref.current;
+  }
+  var init_get_current_from_ref = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/utilities/get-current-from-ref.js"() {
+    }
+  });
+
+  // node_modules/@create-figma-plugin/ui/lib/icons/icon-32/icon-cross-32.js
+  var IconCross32;
+  var init_icon_cross_32 = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/icons/icon-32/icon-cross-32.js"() {
+      init_create_icon();
+      IconCross32 = createIcon("m16 15.293 4.6465-4.6464.7071.7071-4.6465 4.6464 4.6465 4.6465-.7071.7071L16 16.7073l-4.6464 4.6464-.7071-.7071 4.6464-4.6465-4.6464-4.6463.7071-.7071L16 15.293Z", { height: 32, width: 32 });
+    }
+  });
+
+  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/fa94d9ba-65a4-4b78-9696-0ac63074863e/stack.module.js
   var stack_module_default;
   var init_stack_module = __esm({
-    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/5a326d6b-532c-444e-a87d-ff2679648f24/stack.module.js"() {
+    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/fa94d9ba-65a4-4b78-9696-0ac63074863e/stack.module.js"() {
       if (document.getElementById("12d8feb4a7") === null) {
         const element = document.createElement("style");
         element.id = "12d8feb4a7";
@@ -666,10 +703,168 @@
     }
   });
 
-  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/456628f3-f251-4943-a397-992abe725752/tabs.module.js
+  // node_modules/@create-figma-plugin/ui/lib/icons/icon-32/icon-search-32.js
+  var IconSearch32;
+  var init_icon_search_32 = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/icons/icon-32/icon-search-32.js"() {
+      init_create_icon();
+      IconSearch32 = createIcon("M19.1034 15.0517c0 1.9616-1.5901 3.5517-3.5517 3.5517-1.9615 0-3.5517-1.5901-3.5517-3.5517 0-1.9615 1.5902-3.5517 3.5517-3.5517 1.9616 0 3.5517 1.5902 3.5517 3.5517Zm-.7062 3.5529c-.7793.625-1.7687.9988-2.8455.9988-2.5138 0-4.5517-2.0378-4.5517-4.5517 0-2.5138 2.0379-4.5517 4.5517-4.5517 2.5139 0 4.5517 2.0379 4.5517 4.5517 0 1.0769-.3739 2.0664-.999 2.8458l3.2491 3.2492-.7071.7071-3.2492-3.2492Z", { height: 32, width: 32 });
+    }
+  });
+
+  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/fabf5ae0-baf0-4a8a-81c4-8444882d434f/search-textbox.module.js
+  var search_textbox_module_default;
+  var init_search_textbox_module = __esm({
+    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/fabf5ae0-baf0-4a8a-81c4-8444882d434f/search-textbox.module.js"() {
+      if (document.getElementById("866f214c72") === null) {
+        const element = document.createElement("style");
+        element.id = "866f214c72";
+        element.textContent = `._searchTextbox_1ynmc_1 {
+  position: relative;
+  z-index: var(--z-index-1);
+  display: flex;
+  align-items: center;
+}
+/* .disabled {
+  opacity: var(--opacity-30);
+} */
+
+._input_1ynmc_11 {
+  width: 100%;
+  height: 40px;
+  flex-grow: 1;
+  padding-left: 36px;
+  background-color: transparent;
+  color: var(--figma-color-text);
+}
+._disabled_1ynmc_7 ._input_1ynmc_11 {
+  color: var(--figma-color-text-disabled);
+  cursor: not-allowed;
+}
+._input_1ynmc_11::placeholder {
+  color: var(--figma-color-text-tertiary);
+}
+
+._searchIcon_1ynmc_27 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  color: var(--figma-color-icon);
+  pointer-events: none; /* so that clicking the icon focuses the textbox */
+}
+._disabled_1ynmc_7 ._searchIcon_1ynmc_27 {
+  color: var(--figma-color-icon-disabled);
+}
+
+._clearButton_1ynmc_41 {
+  height: 40px;
+  flex: 0 0 40px;
+  padding: 4px;
+  color: var(--figma-color-icon-secondary);
+}
+._searchTextbox_1ynmc_1:not(._disabled_1ynmc_7) ._clearButton_1ynmc_41:hover {
+  color: var(--figma-color-icon);
+}
+._searchTextbox_1ynmc_1:not(._disabled_1ynmc_7) ._clearButton_1ynmc_41:focus {
+  color: var(--figma-color-icon);
+  outline: 0;
+}
+._disabled_1ynmc_7 ._clearButton_1ynmc_41 {
+  color: var(--figma-color-icon-disabled);
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9AY3JlYXRlLWZpZ21hLXBsdWdpbi91aS9saWIvY29tcG9uZW50cy9zZWFyY2gtdGV4dGJveC9zZWFyY2gtdGV4dGJveC5tb2R1bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0VBQ2xCLHlCQUF5QjtFQUN6QixhQUFhO0VBQ2IsbUJBQW1CO0FBQ3JCO0FBQ0E7O0dBRUc7O0FBRUg7RUFDRSxXQUFXO0VBQ1gsWUFBWTtFQUNaLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsNkJBQTZCO0VBQzdCLDhCQUE4QjtBQUNoQztBQUNBO0VBQ0UsdUNBQXVDO0VBQ3ZDLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0UsdUNBQXVDO0FBQ3pDOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixPQUFPO0VBQ1AsV0FBVztFQUNYLFlBQVk7RUFDWixZQUFZO0VBQ1osOEJBQThCO0VBQzlCLG9CQUFvQixFQUFFLGtEQUFrRDtBQUMxRTtBQUNBO0VBQ0UsdUNBQXVDO0FBQ3pDOztBQUVBO0VBQ0UsWUFBWTtFQUNaLGNBQWM7RUFDZCxZQUFZO0VBQ1osd0NBQXdDO0FBQzFDO0FBQ0E7RUFDRSw4QkFBOEI7QUFDaEM7QUFDQTtFQUNFLDhCQUE4QjtFQUM5QixVQUFVO0FBQ1o7QUFDQTtFQUNFLHVDQUF1QztBQUN6QyIsImZpbGUiOiJub2RlX21vZHVsZXMvQGNyZWF0ZS1maWdtYS1wbHVnaW4vdWkvbGliL2NvbXBvbmVudHMvc2VhcmNoLXRleHRib3gvc2VhcmNoLXRleHRib3gubW9kdWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zZWFyY2hUZXh0Ym94IHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB6LWluZGV4OiB2YXIoLS16LWluZGV4LTEpO1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLyogLmRpc2FibGVkIHtcbiAgb3BhY2l0eTogdmFyKC0tb3BhY2l0eS0zMCk7XG59ICovXG5cbi5pbnB1dCB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDQwcHg7XG4gIGZsZXgtZ3JvdzogMTtcbiAgcGFkZGluZy1sZWZ0OiAzNnB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAgY29sb3I6IHZhcigtLWZpZ21hLWNvbG9yLXRleHQpO1xufVxuLmRpc2FibGVkIC5pbnB1dCB7XG4gIGNvbG9yOiB2YXIoLS1maWdtYS1jb2xvci10ZXh0LWRpc2FibGVkKTtcbiAgY3Vyc29yOiBub3QtYWxsb3dlZDtcbn1cbi5pbnB1dDo6cGxhY2Vob2xkZXIge1xuICBjb2xvcjogdmFyKC0tZmlnbWEtY29sb3ItdGV4dC10ZXJ0aWFyeSk7XG59XG5cbi5zZWFyY2hJY29uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIHdpZHRoOiA0MHB4O1xuICBoZWlnaHQ6IDQwcHg7XG4gIHBhZGRpbmc6IDRweDtcbiAgY29sb3I6IHZhcigtLWZpZ21hLWNvbG9yLWljb24pO1xuICBwb2ludGVyLWV2ZW50czogbm9uZTsgLyogc28gdGhhdCBjbGlja2luZyB0aGUgaWNvbiBmb2N1c2VzIHRoZSB0ZXh0Ym94ICovXG59XG4uZGlzYWJsZWQgLnNlYXJjaEljb24ge1xuICBjb2xvcjogdmFyKC0tZmlnbWEtY29sb3ItaWNvbi1kaXNhYmxlZCk7XG59XG5cbi5jbGVhckJ1dHRvbiB7XG4gIGhlaWdodDogNDBweDtcbiAgZmxleDogMCAwIDQwcHg7XG4gIHBhZGRpbmc6IDRweDtcbiAgY29sb3I6IHZhcigtLWZpZ21hLWNvbG9yLWljb24tc2Vjb25kYXJ5KTtcbn1cbi5zZWFyY2hUZXh0Ym94Om5vdCguZGlzYWJsZWQpIC5jbGVhckJ1dHRvbjpob3ZlciB7XG4gIGNvbG9yOiB2YXIoLS1maWdtYS1jb2xvci1pY29uKTtcbn1cbi5zZWFyY2hUZXh0Ym94Om5vdCguZGlzYWJsZWQpIC5jbGVhckJ1dHRvbjpmb2N1cyB7XG4gIGNvbG9yOiB2YXIoLS1maWdtYS1jb2xvci1pY29uKTtcbiAgb3V0bGluZTogMDtcbn1cbi5kaXNhYmxlZCAuY2xlYXJCdXR0b24ge1xuICBjb2xvcjogdmFyKC0tZmlnbWEtY29sb3ItaWNvbi1kaXNhYmxlZCk7XG59XG4iXX0= */`;
+        document.head.append(element);
+      }
+      search_textbox_module_default = { "searchTextbox": "_searchTextbox_1ynmc_1", "input": "_input_1ynmc_11", "disabled": "_disabled_1ynmc_7", "searchIcon": "_searchIcon_1ynmc_27", "clearButton": "_clearButton_1ynmc_41" };
+    }
+  });
+
+  // node_modules/@create-figma-plugin/ui/lib/components/search-textbox/search-textbox.js
+  function SearchTextbox(_a) {
+    var _b = _a, { clearOnEscapeKeyDown = false, disabled = false, name, onFocus = function() {
+    }, onInput = function() {
+    }, onKeyDown = function() {
+    }, onValueInput = function() {
+    }, placeholder, propagateEscapeKeyDown = true, spellCheck = false, value } = _b, rest = __objRest(_b, ["clearOnEscapeKeyDown", "disabled", "name", "onFocus", "onInput", "onKeyDown", "onValueInput", "placeholder", "propagateEscapeKeyDown", "spellCheck", "value"]);
+    const inputElementRef = _(null);
+    const handleClearButtonClick = T2(function() {
+      const inputElement = getCurrentFromRef(inputElementRef);
+      inputElement.value = EMPTY_STRING;
+      const inputEvent = document.createEvent("Event");
+      inputEvent.initEvent("input", true, true);
+      inputElement.dispatchEvent(inputEvent);
+      inputElement.focus();
+    }, []);
+    const handleFocus = T2(function(event) {
+      onFocus(event);
+      event.currentTarget.select();
+    }, [onFocus]);
+    const handleInput = T2(function(event) {
+      onValueInput(event.currentTarget.value, name);
+      onInput(event);
+    }, [name, onInput, onValueInput]);
+    const handleKeyDown = T2(function(event) {
+      onKeyDown(event);
+      if (event.key !== "Escape") {
+        return;
+      }
+      if (clearOnEscapeKeyDown === true && value !== EMPTY_STRING && value !== null) {
+        event.stopPropagation();
+        handleClearButtonClick();
+        return;
+      }
+      if (propagateEscapeKeyDown === false) {
+        event.stopPropagation();
+      }
+      event.currentTarget.blur();
+    }, [
+      clearOnEscapeKeyDown,
+      handleClearButtonClick,
+      onKeyDown,
+      propagateEscapeKeyDown,
+      value
+    ]);
+    return y(
+      "div",
+      { class: createClassName([
+        search_textbox_module_default.searchTextbox,
+        disabled === true ? search_textbox_module_default.disabled : null
+      ]) },
+      y("input", __spreadProps(__spreadValues({}, rest), { ref: inputElementRef, class: search_textbox_module_default.input, disabled: disabled === true, name, onFocus: handleFocus, onInput: handleInput, onKeyDown: handleKeyDown, placeholder, spellcheck: spellCheck, tabIndex: 0, type: "text", value: value === null ? EMPTY_STRING : value })),
+      y(
+        "div",
+        { class: search_textbox_module_default.searchIcon },
+        y(IconSearch32, null)
+      ),
+      value === null || value === EMPTY_STRING || disabled === true ? null : y(
+        "button",
+        { class: search_textbox_module_default.clearButton, onClick: handleClearButtonClick, tabIndex: 0 },
+        y(IconCross32, null)
+      )
+    );
+  }
+  var EMPTY_STRING;
+  var init_search_textbox = __esm({
+    "node_modules/@create-figma-plugin/ui/lib/components/search-textbox/search-textbox.js"() {
+      init_preact_module();
+      init_hooks_module();
+      init_icon_cross_32();
+      init_icon_search_32();
+      init_create_class_name();
+      init_get_current_from_ref();
+      init_search_textbox_module();
+      EMPTY_STRING = "";
+    }
+  });
+
+  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/7261c6f6-9e45-4150-8ce5-db631228de39/tabs.module.js
   var tabs_module_default;
   var init_tabs_module = __esm({
-    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/456628f3-f251-4943-a397-992abe725752/tabs.module.js"() {
+    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/7261c6f6-9e45-4150-8ce5-db631228de39/tabs.module.js"() {
       if (document.getElementById("738847a2ac") === null) {
         const element = document.createElement("style");
         element.id = "738847a2ac";
@@ -819,10 +1014,10 @@
     }
   });
 
-  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/71aa34b1-881a-4b3c-8a7f-6193be112627/container.module.js
+  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/a90cd4e5-ecc8-4fa7-869a-e5204e93bbad/container.module.js
   var container_module_default;
   var init_container_module = __esm({
-    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/71aa34b1-881a-4b3c-8a7f-6193be112627/container.module.js"() {
+    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/a90cd4e5-ecc8-4fa7-869a-e5204e93bbad/container.module.js"() {
       if (document.getElementById("e1fc3e4553") === null) {
         const element = document.createElement("style");
         element.id = "e1fc3e4553";
@@ -861,10 +1056,10 @@
     }
   });
 
-  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/e4082ecd-a0f6-423a-8498-1c45f0aaf5f0/vertical-space.module.js
+  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/fd7ce636-d1f4-4000-8ff7-b392b958075c/vertical-space.module.js
   var vertical_space_module_default;
   var init_vertical_space_module = __esm({
-    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/e4082ecd-a0f6-423a-8498-1c45f0aaf5f0/vertical-space.module.js"() {
+    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/fd7ce636-d1f4-4000-8ff7-b392b958075c/vertical-space.module.js"() {
       if (document.getElementById("ab07f39c21") === null) {
         const element = document.createElement("style");
         element.id = "ab07f39c21";
@@ -903,9 +1098,9 @@
     }
   });
 
-  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/54498452-e8c8-48b7-a42c-e14f84025bcd/base.js
+  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/b6f292fc-050f-49d9-81c8-ca1cae26faca/base.js
   var init_base = __esm({
-    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/54498452-e8c8-48b7-a42c-e14f84025bcd/base.js"() {
+    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/b6f292fc-050f-49d9-81c8-ca1cae26faca/base.js"() {
       if (document.getElementById("8ec4ca419e") === null) {
         const element = document.createElement("style");
         element.id = "8ec4ca419e";
@@ -1037,6 +1232,7 @@ svg {
   var init_lib2 = __esm({
     "node_modules/@create-figma-plugin/ui/lib/index.js"() {
       init_disclosure();
+      init_search_textbox();
       init_tabs();
       init_container();
       init_stack();
@@ -1045,10 +1241,10 @@ svg {
     }
   });
 
-  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/7508ac56-3785-4fb3-a6b6-9a1334dd9506/styles.js
+  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/5bd4cde1-4a07-46ab-b9d5-18382c012e3d/styles.js
   var styles_default;
   var init_styles = __esm({
-    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/7508ac56-3785-4fb3-a6b6-9a1334dd9506/styles.js"() {
+    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/5bd4cde1-4a07-46ab-b9d5-18382c012e3d/styles.js"() {
       if (document.getElementById("ed07d7d4b2") === null) {
         const element = document.createElement("style");
         element.id = "ed07d7d4b2";
@@ -1200,10 +1396,10 @@ svg {
     }
   });
 
-  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/93dd549b-5b34-406b-9289-f9b7629a603f/styles.js
+  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/de9f1d33-e4c1-498d-8616-b3cd46b6905d/styles.js
   var styles_default2;
   var init_styles2 = __esm({
-    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/93dd549b-5b34-406b-9289-f9b7629a603f/styles.js"() {
+    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/de9f1d33-e4c1-498d-8616-b3cd46b6905d/styles.js"() {
       if (document.getElementById("ed07d7d4b2") === null) {
         const element = document.createElement("style");
         element.id = "ed07d7d4b2";
@@ -1355,10 +1551,10 @@ svg {
     }
   });
 
-  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/08c8974e-9f39-4084-a922-0877d8793c4f/styles.js
+  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/150b9c6b-a237-4fbb-aa46-2ac23ed2daea/styles.js
   var styles_default3;
   var init_styles3 = __esm({
-    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/08c8974e-9f39-4084-a922-0877d8793c4f/styles.js"() {
+    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/150b9c6b-a237-4fbb-aa46-2ac23ed2daea/styles.js"() {
       if (document.getElementById("ed07d7d4b2") === null) {
         const element = document.createElement("style");
         element.id = "ed07d7d4b2";
@@ -1603,10 +1799,10 @@ svg {
     }
   });
 
-  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/79b7fbea-5022-473f-a914-6f54d1688113/styles.js
+  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/c20e7a07-7fa6-4913-9f6f-de123413c55b/styles.js
   var styles_default4;
   var init_styles4 = __esm({
-    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/79b7fbea-5022-473f-a914-6f54d1688113/styles.js"() {
+    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/c20e7a07-7fa6-4913-9f6f-de123413c55b/styles.js"() {
       if (document.getElementById("ed07d7d4b2") === null) {
         const element = document.createElement("style");
         element.id = "ed07d7d4b2";
@@ -1807,10 +2003,10 @@ svg {
     }
   });
 
-  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/955b4c28-1955-4512-bc32-7bd6ad9ff850/styles.js
+  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/f31c181e-a560-4e3b-89ca-79e217277543/styles.js
   var styles_default5;
   var init_styles5 = __esm({
-    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/955b4c28-1955-4512-bc32-7bd6ad9ff850/styles.js"() {
+    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/f31c181e-a560-4e3b-89ca-79e217277543/styles.js"() {
       if (document.getElementById("ed07d7d4b2") === null) {
         const element = document.createElement("style");
         element.id = "ed07d7d4b2";
@@ -2000,7 +2196,7 @@ svg {
       init_Box();
       init_BoilerPlate();
       init_Article();
-      _Section = ({ section, currentTab }) => {
+      _Section = ({ section, currentTab, searchValue }) => {
         const [open, setOpen] = h2(true);
         const handleClick = () => {
           setOpen(!open);
@@ -2022,7 +2218,13 @@ svg {
             },
             section.children.map((comp) => {
               if (currentTab === "COMPONENTS") {
-                return /* @__PURE__ */ y(_Box, { comp });
+                if (searchValue) {
+                  if (comp.name.toLowerCase().includes(searchValue.toLowerCase())) {
+                    return /* @__PURE__ */ y(_Box, { comp });
+                  }
+                } else {
+                  return /* @__PURE__ */ y(_Box, { comp });
+                }
               }
               if (currentTab === "BOILERPLATES") {
                 return /* @__PURE__ */ y(_BoilerPlate, { comp });
@@ -2037,10 +2239,10 @@ svg {
     }
   });
 
-  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/5583bb65-5825-41e8-b801-f435fa1bf7fa/styles.js
+  // ../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/3c7f6f0e-723a-42f8-8e35-5c1cf91a03fa/styles.js
   var styles_default6;
   var init_styles6 = __esm({
-    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/5583bb65-5825-41e8-b801-f435fa1bf7fa/styles.js"() {
+    "../../../../../private/var/folders/q3/phj1q3716nq2zh1ttfzj02g80000gn/T/3c7f6f0e-723a-42f8-8e35-5c1cf91a03fa/styles.js"() {
       if (document.getElementById("ed07d7d4b2") === null) {
         const element = document.createElement("style");
         element.id = "ed07d7d4b2";
@@ -2220,15 +2422,27 @@ svg {
     default: () => ui_default
   });
   function Plugin({ data }) {
+    const [searchValue, setSearchValue] = h2("");
+    const handleSearchInput = (e3) => {
+      setSearchValue(e3.currentTarget.value);
+    };
     const [currentTab, setCurrentTab] = h2("COMPONENTS");
     const tabOptions = [
       {
-        children: /* @__PURE__ */ y("div", null, data.COMPONENTS.map((section) => {
+        children: /* @__PURE__ */ y("div", null, /* @__PURE__ */ y(
+          SearchTextbox,
+          {
+            placeholder: "search component",
+            value: searchValue,
+            onInput: handleSearchInput
+          }
+        ), data.COMPONENTS.map((section) => {
           return /* @__PURE__ */ y(
             _Section,
             {
               section,
-              currentTab
+              currentTab,
+              searchValue
             }
           );
         })),

@@ -7,7 +7,7 @@ import { _Box } from "./_Box"
 import { _BoilerPlate } from "./_BoilerPlate"
 import { _Article } from "./_Article"
 
-export const _Section = ({ section, currentTab }) => {
+export const _Section = ({ section, currentTab, searchValue }) => {
   // console.log(section)
   const [open, setOpen] = useState(true)
   const handleClick = () => {
@@ -32,7 +32,13 @@ export const _Section = ({ section, currentTab }) => {
       >
         {section.children.map((comp) => {
           if (currentTab === "COMPONENTS") {
-            return <_Box comp={comp} />
+            if (searchValue) {
+              if (comp.name.toLowerCase().includes(searchValue.toLowerCase())) {
+                return <_Box comp={comp} />
+              }
+            } else {
+              return <_Box comp={comp} />
+            }
           }
           if (currentTab === "BOILERPLATES") {
             return <_BoilerPlate comp={comp} />
